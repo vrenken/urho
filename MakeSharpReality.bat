@@ -20,7 +20,7 @@ if "%VSVER%" == "2017" set "VS_VER=15"
 if "%PLATFORM%" == "x64" (set "TARGET=Visual Studio %VS_VER% Win64") else (set "TARGET=Visual Studio %VS_VER%")
 
 :: Just to ensure that cmake is found - in our case on the TFS build server.
-SET CMAKE_EXE=../../tools/cmake/cmake
+SET CMAKE_EXE=..\..\tools\cmake\cmake
 
 
 del Urho3D\Urho3D_SharpReality\CMakeCache.txt 2>NUL
